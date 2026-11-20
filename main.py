@@ -1,4 +1,4 @@
-import random
+import secrets
 import string
 
 x = string.ascii_letters + string.digits + string.punctuation
@@ -13,5 +13,5 @@ else:
         print("Length should be from 4 to 32")
     else:
         for i in range(length):
-            password += random.choice(x)
+            password += secrets.choice(x)
         print(password)
